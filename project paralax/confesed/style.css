@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(black, #38073b);
+}
+
+.paralax{
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    padding: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.paralax::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #c4c3c2, transparent);
+    z-index: 1500;
+}
+.paralax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#text{
+    position: absolute;
+    font-size: 1cm;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 3px 3px 10px grey;
+    
+}
+
+.paralax img#meteorid{
+    z-index: 100;
+}
+#button{
+    position: absolute;
+    font-size: 1cm;
+    color: black;
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    transform: translateY(100px);
+    
+}
+
+.description{
+    position: relative;
+    padding: 8cm;
+    background-color: #c4c2c3;
+}
+
+.description p{
+    font-size: 0.6cm
+}
